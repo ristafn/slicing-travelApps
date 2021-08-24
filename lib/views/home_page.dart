@@ -105,7 +105,7 @@ class HomePage extends StatelessWidget {
           slivers: [
             SliverToBoxAdapter(
               child: Text(
-                'Mau Kemana\nhari ini?',
+                'Mau Kemana\nHari Ini?',
                 style: Constraints.jumbotron,
               ),
             ),
@@ -214,7 +214,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Align(
-                          alignment: Alignment.bottomLeft,
+                          alignment: Alignment.topLeft,
                           child: Container(
                             padding: EdgeInsets.all(20.0),
                             decoration: BoxDecoration(
@@ -227,6 +227,21 @@ class HomePage extends StatelessWidget {
                             child: Text(
                               place.name,
                               style: GoogleFonts.robotoCondensed(fontSize: 17),
+                            ),
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.topRight,
+                          child: Container(
+                            margin: EdgeInsets.all(5.0),
+                            padding: EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                              color: Constraints.amber,
+                              shape: BoxShape.circle,
+                            ),
+                            child: Icon(
+                              Icons.favorite,
+                              color: Colors.black26,
                             ),
                           ),
                         )

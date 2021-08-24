@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:slicing_travel_apps/views/explore_page.dart';
+import 'package:slicing_travel_apps/views/favorite_place.dart';
 
 import '../views/home_page.dart';
 
@@ -7,8 +9,8 @@ class NavbarProvider with ChangeNotifier {
 
   static const List<Widget> pageOptions = <Widget>[
     HomePage(),
-    Center(child: Text('Jelajah')),
-    Center(child: Text('Favorit')),
+    ExplorePage(),
+    FavoritePage(),
     Center(child: Text('Profil')),
   ];
 
