@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
                             padding: const EdgeInsets.all(4.0),
                             child: Material(
                               elevation: 4,
-                              shadowColor: Colors.amber,
+                              shadowColor: Constraints.amber,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(50.0)),
                               child: CircleAvatar(
@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                         padding: const EdgeInsets.all(4.0),
                         child: Material(
                           elevation: 4,
-                          shadowColor: Colors.amber,
+                          shadowColor: Constraints.amber,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50.0)),
                           child: CircleAvatar(
@@ -106,8 +106,7 @@ class HomePage extends StatelessWidget {
             SliverToBoxAdapter(
               child: Text(
                 'Mau Kemana\nhari ini?',
-                style: GoogleFonts.sawarabiMincho(fontSize: 36),
-                // style: TextStyle(fontWeight: FontWeight.w700, fontSize: 36),
+                style: Constraints.jumbotron,
               ),
             ),
             SliverToBoxAdapter(
@@ -219,7 +218,7 @@ class HomePage extends StatelessWidget {
                           child: Container(
                             padding: EdgeInsets.all(20.0),
                             decoration: BoxDecoration(
-                              color: Colors.amber,
+                              color: Constraints.amber,
                               borderRadius: BorderRadius.only(
                                 bottomRight: Radius.circular(20.0),
                                 topLeft: Radius.circular(20.0),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:slicing_travel_apps/constraints.dart';
 
 import 'providers/navbar_provider.dart';
 
@@ -19,6 +20,8 @@ class Navbar extends StatelessWidget {
             onTap: (index) {
               nav.selectedIndex = index;
             },
+            selectedItemColor: Constraints.amber,
+            unselectedItemColor: Colors.amber[100],
           ),
         );
       }),
