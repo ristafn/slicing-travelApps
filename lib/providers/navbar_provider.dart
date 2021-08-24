@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../home_page.dart';
-import '../page2.dart';
+import '../views/home_page.dart';
+import '../views/page2.dart';
 
 class NavbarProvider with ChangeNotifier {
   static int _selectedIndex = 0;
