@@ -5,7 +5,7 @@ import 'package:slicing_travel_apps/views/favorite_place.dart';
 import '../views/home_page.dart';
 
 class NavbarProvider with ChangeNotifier {
-  static int _selectedIndex = 0;
+  int _selectedIndex = 0;
 
   static const List<Widget> pageOptions = <Widget>[
     HomePage(),
